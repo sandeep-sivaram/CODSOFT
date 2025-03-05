@@ -17,7 +17,7 @@
             background-color: #f4f4f4;
         }
         .top-bar {
-            background: #0073e6;
+            background: #010942;
             color: white;
             display: flex;
             justify-content: space-between;
@@ -43,12 +43,12 @@
             margin: 0 15px;
             font-size: 1.2rem;
         }
-        .navbar a:hover {
-            color: #0073e6;
-            font-weight: bold;
-        }
+         .navbar a:hover {
+    color: #0038df;
+    font-weight: bold;
+}
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?hospital,doctor') no-repeat center/cover;
+            background: url('https://source.unsplash.com/1600x900/?business,meeting') no-repeat center/cover;
             color: white;
             text-align: center;
             padding: 120px 20px;
@@ -59,7 +59,7 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.15);
             z-index: 1;
         }
         .hero-content {
@@ -73,8 +73,12 @@
             font-size: 1.2rem;
             margin: 10px 0;
         }
+      .hero-content h1, .hero-content p {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
         .cta-button {
-            background: #28a745;
+            background: #ff9800;
             color: white;
             padding: 12px 25px;
             font-size: 1.2rem;
@@ -82,17 +86,17 @@
             cursor: pointer;
             transition: 0.3s ease-in-out;
         }
-        .cta-button:hover {
-            background: #218838;
-            transform: scale(1.05);
-            box-shadow: 0px 4px 10px rgba(0, 127, 80, 0.5);
+         .cta-button:hover {
+                   background: #009dff;
+                   transform: scale(1.05);
+           box-shadow: 0px 4px 10px rgba(0, 213, 255, 0.5);
         }
         .services {
             display: flex;
             justify-content: center;
             gap: 20px;
             padding: 40px 20px;
-            background: #0073e6;
+            background: #013665;
             color: white;
             text-align: center;
         }
@@ -107,46 +111,55 @@
         }
         .service-box i {
             font-size: 2rem;
-            color: #0073e6;
+            color: #0580f3;
         }
+      .service-box:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
         .about {
             padding: 40px 20px;
             text-align: center;
             background: #fff;
         }
         .about img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 10px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                text-align: center;
-            }
-            .navbar div {
-                margin-top: 10px;
-            }
-            .navbar a {
-                display: block;
-                margin: 5px 0;
-            }
-            .services {
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-            }
-            .service-box {
-                width: 90%;
-                margin-bottom: 20px;
-            }
-        }
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+      footer {
+        background:#333; 
+        color:white; 
+        text-align:center; 
+        padding:20px;
+      }
+     @media (max-width: 768px) {
+       .about img {
+        display: block;
+        margin: 0 auto;
+    }
+       .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar div {
+        margin-top: 10px;
+    }
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .service-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
     </style>
 </head>
 <body>
@@ -167,6 +180,7 @@
     </nav>
     <section class="hero">
         <div class="hero-content">
+            <img src="https://th.bing.com/th/id/OIP.bzphWK7L-CkySymstZ-8mgHaEK?w=313&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" />
             <h1>Your Health, Our Priority</h1>
             <p>Get expert medical care from our trusted professionals.</p>
             <button class="cta-button">Book an Appointment</button>
